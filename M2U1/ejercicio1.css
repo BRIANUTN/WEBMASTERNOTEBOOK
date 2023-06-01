@@ -1,0 +1,11 @@
+.caja {
+    color: white;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 22, 121, 1) 33%, rgba(203, 15, 66, 1) 71%, rgba(0, 212, 255, 1) 100%);
+    height: 500px;
+    width: 500px;
+    margin: 100px;
+    box-shadow: -10px -10px 69px black;
+    /*margen x margen y blur color*/
+
+}
