@@ -5,7 +5,20 @@
     height: 500px;
     width: 500px;
     margin: 100px;
-    box-shadow: -10px -10px 69px black;
+    box-shadow: 0 0 50px black;
     /*margen x margen y blur color*/
+    border-radius: 20px 59px;
+}
+.texto{
+    background-color: aqua;
+    column-count: 3;
+    column-gap: 50px;
+    column-rule: 2px solid black;
+    font-family: 'Zilla Slab', serif;
+}
 
+.fa-brands{
+    font-size: 200px;
+    margin: 150px;
+    color: black;
 }
