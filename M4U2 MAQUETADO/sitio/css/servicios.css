@@ -103,23 +103,17 @@
         transform: scale(1.1);
         transition: all 1s ease;
         border-radius: 20px; 
-        box-shadow: 5px 10px 5px black;
-
     }
 
     .serv2:hover{
         transform: scale(1.1);
         transition: all 1s ease;
         border-radius: 20px; 
-        box-shadow: 5px 10px 5px black;
-
     }
 
     .serv3:hover{
         transform: scale(1.1);
         transition: all 1s ease;
         border-radius: 20px; 
-        box-shadow: 5px 10px 5px black;
-
     }
     
