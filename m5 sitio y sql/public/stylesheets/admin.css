@@ -1,0 +1,17 @@
+header {
+    border-bottom: solid 5px grey;
+}
+header img{
+    transform: scale(0.8);
+}
+
+header h1{
+    transform: rotate(360deg);
+    position: relative;
+    top: 135px;
+    left: 50px;
+}
+
+form {
+    text-align: center;
+}

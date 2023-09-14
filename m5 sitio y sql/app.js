@@ -12,8 +12,7 @@ var nosotrosRouter = require('./routes/nosotros');
 var serviciosRouter = require('./routes/servicios');
 var galeriaRouter = require('./routes/galeria');
 var contactoRouter = require('./routes/contacto');
-var loginRouter =require('./routes/admin/login');
-
+var loginRouter = require('./routes/admin/login');
 
 var app = express();
 
