@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 require('dotenv').config()
+var sessioon = require('express-session');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -13,6 +14,7 @@ var serviciosRouter = require('./routes/servicios');
 var galeriaRouter = require('./routes/galeria');
 var contactoRouter = require('./routes/contacto');
 var loginRouter = require('./routes/admin/login');
+var adminRouter = require('./routes/admin/novedades');
 
 var app = express();
 
@@ -26,6 +28,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(session({
+  secret: 'bep23081996',
+  resave: false,
+  saveUninitialized: true
+}));
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/nosotros', nosotrosRouter);
@@ -33,6 +41,8 @@ app.use('/servicios', serviciosRouter);
 app.use('/galeria', galeriaRouter);
 app.use('/contacto', contactoRouter);
 app.use('/admin/login', loginRouter);
+app.use('/admin/novedades', adminRouter);
+
 
 
 // catch 404 and forward to error handler
