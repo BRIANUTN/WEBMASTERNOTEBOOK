@@ -23,7 +23,7 @@ router.get('/eliminar/:id', async (req, res, next) => {
 router.get('/agregar', (req, res, next) => {
     res.render('admin/agregar', {
         layout: 'admin/layout'
-    });
+    })
 });
 
 router.post('/agregar', async (req, res, next) => {
@@ -38,7 +38,7 @@ router.post('/agregar', async (req, res, next) => {
                 message: 'Todos los campos son requeridos'
             })
         }
-    } catch (error) {
+    } catch(error) {
         console.log(error)
         res.render('admin/agregar', {
             layout: 'admin/layout',
